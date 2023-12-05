@@ -1,0 +1,25 @@
+{
+ 
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@main/*": ["src/*"],
+      "@icons/*": ["src/components/common/icons/*"],
+      "@components/*": ["src/components/*"],
+      "@assets/*": ["src/components/common/assets/*"],
+    },
+    "types": ["node", "jest", "testing-library__jest-dom", "@emotion/core"],
+    "skipLibCheck": true,
+    "strictNullChecks": true
+  },
+  "include": ["./src/**/*", "./gatsby-node.ts", "./gatsby-config.ts", "./plugins/**/*"]
+  
+  
+}
