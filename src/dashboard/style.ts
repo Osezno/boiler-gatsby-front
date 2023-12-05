@@ -47,6 +47,9 @@ const Styles = {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 15px;
     column-gap: 15px;
+  `,
+  back: css`
+    cursor:pointer;
   `
 }
 

@@ -5,7 +5,15 @@
 module.exports = {
  
   plugins: [
-    'gatsby-plugin-emotion', 
+    'gatsby-plugin-emotion',
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/ // See below to configure properly
+        }
+      }
+    }, 
     {
       resolve: 'gatsby-alias-imports',
       options: {
