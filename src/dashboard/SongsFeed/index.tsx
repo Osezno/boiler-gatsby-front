@@ -2,9 +2,9 @@
 import React, { useState, useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 
-import { View, Text, Card } from '../../components/common'
+import { View, Text, Card } from '@components/common'
 import { userSongsDummy, SongsProps } from './constants'
-import { Styles } from '../style'
+import { PrimaryStyles as styles } from '@style/index'
 
 const RenderSongCard = ({ title, date, lastUpdated, description, id }: SongsProps) => {
 
@@ -28,14 +28,16 @@ const SongsFeed = () => {
   const [userSongs, setUserSongs] = useState(userSongsDummy)
   const navigate = useNavigate() //useMemo | usecallback
 
-  return <View css={Styles.borderWrapper}>
+  return <View className='padding'>
     <Text variant='h3' size='large' weight='regular' >
       User Songs
     </Text>
-    <View css={Styles.fourCoulumsGrid}>
+    <View css={[
+      styles.simpleGrid(2, 4),
+      styles.marginTop(1)]}>
       {
         userSongs.map(a =>
-          <View onClick={() => navigate(a.id)}> 
+          <View onClick={() => navigate(a.id)}>
             <RenderSongCard {...a} />
           </View>
         )

@@ -18,21 +18,4 @@ const generateMediaQueries = (points: BreakPointType): BreakPointType & { hover:
 })
 
 
-export type MediaQueryTypes = BreakPointType & {
-  hover: string;
-  cb: () => string;
-}
-
-const cbstring = () => ''
-
-const media = (points: BreakPointType, cb = cbstring): BreakPointType & { hover: string } => ({
-  xs: `@media (min-width: ${points.xs}) { ${ cb } }`,
-  sm: `@media (min-width: ${points.sm})`,
-  md: `@media (min-width: ${points.md})`,
-  lg: `@media (min-width: ${points.lg})`,
-  xl: `@media (min-width: ${points.xl})`,
-  hover: '@media (hover: hover)'
-})
-
-
-export { generateMediaQueries }
+export { generateMediaQueries, }

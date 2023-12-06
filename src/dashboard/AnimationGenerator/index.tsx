@@ -4,7 +4,7 @@ import React, { useState, useEffect, useContext, createContext } from 'react'
 import { navigate } from 'gatsby'
 import { View, Text } from '../../components/common'
 import { colors } from './constants'
-import { Styles } from '../style'
+import { Styles } from '../../components/common/style'
 /*
 const Block = ({ index, mouseDown, colorNumber, setColor, returnColor }) => {
 

@@ -36,8 +36,8 @@ function defaultGeneratePalette(): PaletteType {
     black: {
       lightest:'',
       light:'',
-      base:'#000',
-      dark:''
+      base:'rgb(52 49 49)',
+      dark:'#000'
     },
     white: {
       lightest:'',
@@ -82,15 +82,15 @@ function defaultGeneratePalette(): PaletteType {
       dark: ''
     },
     violet: {
-      lightest: '',
+      lightest: '#8350ed29',
       light: '',
-      base: '#8350ed',
+      base:'rgb(131 80 237)',
       dark: ''
     },
     pink: {
       lightest:'',
       light: '',
-      base: '',
+      base: '#ff8ffd',
       dark: ''
     },
     cyan: {

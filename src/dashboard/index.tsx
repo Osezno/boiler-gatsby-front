@@ -4,25 +4,19 @@ import { Routes, HashRouter, Route, Navigate, Outlet } from 'react-router-dom'
 import { navigate } from 'gatsby'
 import { View, Text } from '../components/common'
 import Navigation from './Navigation'
-import { Styles } from './style'
+import { Styles, PrimaryStyles } from '@style/index'
 /* 
- -identar
- -comentar
+ -Requests
+ -StateManager
+ -husky and lerna
 
  -Feed de canciones ().
- -Comentarios para cada cancion
- -Division de cancion en secciones, con comentarios
-  acordes y grabaciones con nombre.
- -lista de grabaciones Control de versiones 
-  para grabacion general
- 
- 
-
- -lista de posibles nombres de la cancion */
+*/
 
 const DashbboardPage = () => {
+  const wrapperStyle=[PrimaryStyles.complexGrid(1,"2fr 10fr"),Styles.wrapper]
   return (
-    <View css={Styles.wrapper}>
+    <View css={wrapperStyle}>
       <Navigation />
       <Outlet />
     </View>)

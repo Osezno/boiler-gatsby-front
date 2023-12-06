@@ -49,14 +49,6 @@ const spaces = {
   xl: `${spacer * 3}rem`
 }
 
-const grids = {
- 
-}
-
-const box = {
- 
-}
-
 export const Theme = {
     colors,
     breakpoints,
@@ -65,10 +57,7 @@ export const Theme = {
     fontSizes,
     fonts,
     lineHeights,
-    spaces,
-    grids,
-    box
-    //spaces lineHeights borders grids box fontsizes
+    spaces
   }
 
 export default Theme

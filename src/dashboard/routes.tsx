@@ -3,14 +3,14 @@ import { Routes, HashRouter, Route, Navigate } from 'react-router-dom'
 import SongsFeed from './SongsFeed'
 import SongScreen from './SongScreen'
 import DashboardScreen from './index'
-
+import {routes} from './routesConstants'
 //make routes organized variables or object variables
 export const dashboardRoutes = () => {
   return (
-    <Route path={'/dashboard'} element={<DashboardScreen />} >
-      <Route path={'/dashboard/'} element={<Navigate to={'/dashboard/projects'} />} /> 
-      <Route path={'/dashboard/projects'}  element={<SongsFeed />} /> 
-      <Route path={'/dashboard/projects/:id'}  element={<SongScreen />} /> 
+    <Route path={routes.dashboard} element={<DashboardScreen />} >
+      <Route path={routes.dashboard + '/'} element={<Navigate to={routes.projects} />} /> 
+      <Route path={routes.projects}  element={<SongsFeed />} /> 
+      <Route path={routes.song}  element={<SongScreen />} /> 
      {/*  <Route path={'avance'} element={<ProgressMenu2 />} />
       <Route path={'preoferta'} element={<PreOffer />} /> */}
       {/* Documentos de Acreditado */}

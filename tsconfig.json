@@ -13,6 +13,8 @@
       "@main/*": ["src/*"],
       "@icons/*": ["src/components/common/icons/*"],
       "@components/*": ["src/components/*"],
+      "@theme/*": ["src/theme/*"],
+      "@style/*": ["src/components/common/style/*"],
       "@assets/*": ["src/components/common/assets/*"],
     },
     "types": ["node", "jest", "testing-library__jest-dom", "@emotion/core"],

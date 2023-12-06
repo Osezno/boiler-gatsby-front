@@ -1,9 +1,9 @@
 // Components
 export * from './Text'
-export * from './Toast'
+//export * from './Toast'
 export * from './Card'
 export * from './View'
-
+export * from './Icon'
 
 
 

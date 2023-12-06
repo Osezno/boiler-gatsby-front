@@ -7,11 +7,10 @@ const Footer = () => {
   return (
     <View id='footer' css={style.footerWrapper}>
       <View css={style.footer}>
-        <span css={style.line}></span>
         <span css={style.TxtFooter}>
-        Ofrecemos mejores oportunidades para financiar sueños 
+        Optimiza tus proyectos musicales 
           <span css={style.cloud}> ☁ </span> Copyright © 2023
-        Todos los derechos reservados ION
+        Todos los derechos reservados Groove Ground
         </span>
       </View>
     </View>

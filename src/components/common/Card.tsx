@@ -39,15 +39,13 @@ export const Card : React.FC<CardProps> = ({
   const Component = component || element[tag]
 
   const mainContainerStyle = css`
-    background-color: ${Theme.colors.gray.base };
+    background-color: ${Theme.colors.white.base };
     border-radius: 10px;
     width: 100%;
     box-sizing: border-box;
     padding: 3%;
     cursor:pointer;
-    box-shadow: ${shadow ? 
-    `0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15)`  
-    : 'none'} ;
+    box-shadow: ${shadow ? Theme.shadows.default:'none'};
     &:hover {
       background-color: ${Theme.colors.cyan.base };
     }

@@ -18,9 +18,11 @@ module.exports = {
       resolve: 'gatsby-alias-imports',
       options: {
         aliases: {
-          '@theme': `${__dirname}/config/theme.ts`,
+         /*  '@theme': `${__dirname}/config/theme.ts`,
           '@utils': `${__dirname}/src/common/utils`,
-          '@hooks': `${__dirname}/src/common/hooks`,
+          '@hooks': `${__dirname}/src/common/hooks`, */
+          '@theme': `${__dirname}/src/theme`,
+          '@style': `${__dirname}/src/components/common/style`,
           '@icons': `${__dirname}/src/components/common/icons`,
           '@components': `${__dirname}/src/components/`,
           '@assets': `${__dirname}/src/components/common/assets`,

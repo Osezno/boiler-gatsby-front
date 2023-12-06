@@ -7,6 +7,7 @@ export type Shadows = {
 
 export function createShadows(): Shadows {
   return {
+    default:`0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15)`,
     xs: `0 0 1px #f6f6ff,
     0 0 1px 1px #f6f6ff
     `,

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import { navigate } from 'gatsby'
 import { View, Text, Card } from '../../components/common'
 import { userSongsDummy, SongsProps } from './constants'
-import { Styles } from '../style'
+import { Styles } from '../../components/common/style'
 
 
 const Render = () => {
